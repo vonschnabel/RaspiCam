@@ -1,0 +1,8 @@
+[Unit]
+Description=Stream the Raspi Camera to Port 8000 on localhost
+
+[Service]
+ExecStart=/bin/python3.7 /usr/local/bin/stream_svc.py
+
+[Install]
+WantedBy=multi-user.target

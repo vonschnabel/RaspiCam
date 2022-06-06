@@ -1,0 +1,10 @@
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl start webstream_mjpg
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl stop webstream_mjpg
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl start webstream_record_mjpg
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl stop webstream_record_mjpg
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl restart apache2
+www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/webstream.conf /usr/local/bin/webstream.conf
+www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/alias.conf /etc/apache2/mods-available/alias.conf
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl is-active webstream_record_mjpg.service
+www-data ALL=(ALL) NOPASSWD:/bin/ffmpeg *
+
