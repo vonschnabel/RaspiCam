@@ -26,6 +26,9 @@ sudo mv ./RaspiCam/070-raspicam /etc/sudoers.d/
 sudo chown root:root /etc/sudoers.d/070-raspicam
 sudo chmod 440 /etc/sudoers.d/070-raspicam
 
+sudo mv ./RaspiCam/webstream_mjpg.service /etc/systemd/system/webstream_mjpg.service
+sudo mv ./RaspiCam/webstream_record_mjpg.service /etc/systemd/system/webstream_record_mjpg.service
+
 sudo mv ./RaspiCam/stream_svc.py /usr/local/bin/
 sudo mv ./RaspiCam/stream_record_svc.py /usr/local/bin
 sudo mv ./RaspiCam/webstream.conf /usr/local/bin
