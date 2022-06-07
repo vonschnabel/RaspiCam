@@ -18,7 +18,7 @@ else
   git clone https://github.com/vonschnabel/RaspiCam.git
 fi
 
-sudo apt install apache2 php php-mbstring libapache2-mod-php python-picamera python3-picamera -y
+sudo apt install apache2 php php-mbstring libapache2-mod-php python3-picamera -y
 
 #sudo sed -i 's/Priv/#Priv/g' /lib/systemd/system/apache2.service
 
