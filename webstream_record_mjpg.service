@@ -2,7 +2,7 @@
 Description=Stream the Raspi Camera to Port 8000 on localhost and record it to a file
 
 [Service]
-ExecStart=/bin/python3.7 /usr/local/bin/stream_record_svc.py
+ExecStart=/bin/python3 /usr/local/bin/stream_record_svc.py
 
 [Install]
 WantedBy=multi-user.target
